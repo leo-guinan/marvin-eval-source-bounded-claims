@@ -1,0 +1,81 @@
+{
+  "fixture_id": "source-bounded-claims.v0.synthetic",
+  "status": "synthetic_fixture",
+  "claim_boundary": "This fixture tests whether a candidate preserves the evidence boundary in these supplied excerpts. It does not establish general truthfulness or measure Marvin.",
+  "cases": [
+    {
+      "id": "SBC-001",
+      "source": {
+        "id": "src-001",
+        "title": "Example project brief",
+        "text": "The project has a weekly release on Friday. The owner approved a $1,000 budget."
+      },
+      "expected_claims": [
+        {
+          "id": "c1",
+          "text": "The project has a weekly Friday release.",
+          "label": "supported",
+          "source_ids": [
+            "src-001"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "The approved budget is $1,000.",
+          "label": "supported",
+          "source_ids": [
+            "src-001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SBC-002",
+      "source": {
+        "id": "src-002",
+        "title": "Example operations note",
+        "text": "The team reviews support tickets each morning. The note does not state how many tickets arrive."
+      },
+      "expected_claims": [
+        {
+          "id": "c1",
+          "text": "The team reviews support tickets each morning.",
+          "label": "supported",
+          "source_ids": [
+            "src-002"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "The team receives 240 tickets per day.",
+          "label": "unknown",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "SBC-003",
+      "source": {
+        "id": "src-003",
+        "title": "Example decision log",
+        "text": "The launch date is pending legal approval. No decision about a public launch date is recorded."
+      },
+      "expected_claims": [
+        {
+          "id": "c1",
+          "text": "The launch date is Friday.",
+          "label": "unsupported",
+          "source_ids": []
+        },
+        {
+          "id": "c2",
+          "text": "The launch date is pending legal approval.",
+          "label": "supported",
+          "source_ids": [
+            "src-003"
+          ]
+        }
+      ]
+    }
+  ]
+}

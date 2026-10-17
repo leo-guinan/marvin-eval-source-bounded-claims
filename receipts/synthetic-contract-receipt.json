@@ -1,0 +1,72 @@
+{
+  "receipt_version": "1.0.0",
+  "eval_id": "marvin.source-bounded-claims",
+  "fixture_id": "source-bounded-claims.v0.synthetic",
+  "fixture_status": "synthetic_fixture",
+  "candidate_id": "synthetic-contract-fixture",
+  "candidate_provenance": "synthetic candidate output; not Marvin",
+  "scored_claims": 6,
+  "passing_claims": 6,
+  "claim_accuracy": 1.0,
+  "unsupported_claim_rate": 0.0,
+  "rows": [
+    {
+      "case_id": "SBC-001",
+      "claim_id": "c1",
+      "expected": "supported",
+      "predicted": "supported",
+      "source_ids": [
+        "src-001"
+      ],
+      "pass": true
+    },
+    {
+      "case_id": "SBC-001",
+      "claim_id": "c2",
+      "expected": "supported",
+      "predicted": "supported",
+      "source_ids": [
+        "src-001"
+      ],
+      "pass": true
+    },
+    {
+      "case_id": "SBC-002",
+      "claim_id": "c1",
+      "expected": "supported",
+      "predicted": "supported",
+      "source_ids": [
+        "src-002"
+      ],
+      "pass": true
+    },
+    {
+      "case_id": "SBC-002",
+      "claim_id": "c2",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "source_ids": [],
+      "pass": true
+    },
+    {
+      "case_id": "SBC-003",
+      "claim_id": "c1",
+      "expected": "unsupported",
+      "predicted": "unsupported",
+      "source_ids": [],
+      "pass": true
+    },
+    {
+      "case_id": "SBC-003",
+      "claim_id": "c2",
+      "expected": "supported",
+      "predicted": "supported",
+      "source_ids": [
+        "src-003"
+      ],
+      "pass": true
+    }
+  ],
+  "claim_boundary": "This fixture tests whether a candidate preserves the evidence boundary in these supplied excerpts. It does not establish general truthfulness or measure Marvin.",
+  "generated_at": "2026-10-17T21:52:37.492523+00:00"
+}

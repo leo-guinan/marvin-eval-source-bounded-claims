@@ -1,0 +1,59 @@
+{
+  "candidate_id": "synthetic-contract-fixture",
+  "provenance": "synthetic candidate output; not Marvin",
+  "cases": [
+    {
+      "case_id": "SBC-001",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "label": "supported",
+          "source_ids": [
+            "src-001"
+          ]
+        },
+        {
+          "claim_id": "c2",
+          "label": "supported",
+          "source_ids": [
+            "src-001"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "SBC-002",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "label": "supported",
+          "source_ids": [
+            "src-002"
+          ]
+        },
+        {
+          "claim_id": "c2",
+          "label": "unknown",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "SBC-003",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "label": "unsupported",
+          "source_ids": []
+        },
+        {
+          "claim_id": "c2",
+          "label": "supported",
+          "source_ids": [
+            "src-003"
+          ]
+        }
+      ]
+    }
+  ]
+}
